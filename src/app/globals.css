@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'jura';
+    src: url('./components/fonts/Jura/static/Jura-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('./components/fonts/Metropolis/Metropolis-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('./components/fonts/Inter/static/Inter_18pt-Regular.ttf')  ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
