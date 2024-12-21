@@ -15,12 +15,13 @@ export default function MenStore() {
         {imgs:vintage, goods: "Warning shirt", priceOfProduct: "$25"},
     ]
   return (
-    <div>
-        <h1 className="font-metropolisFont font-extrabold text-2xl">Men&apos;s Store</h1>
-        <div>
+    <div className='px-20 mt-10'>
+        <h1 className="font-metropolisFont font-extrabold mb-4 text-2xl">Men&apos;s Store</h1>
+        <div className='grid grid-cols-3 gap-10'>
             {mensProducts.map((menProduct,index) => (
                 <MenCategoriesPattern key={index} 
                     productImg={menProduct.imgs}
+                    nameOfMenProduct={menProduct.goods}
                     price={menProduct.priceOfProduct}
                 />
             ))}
